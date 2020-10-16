@@ -1,5 +1,15 @@
+html {
+  height: 100%;
+  background-repeat: no-repeat;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 h1 {
@@ -7,17 +17,21 @@ h1 {
   color: #000000;
   text-align: center;
   padding: 5px;
-  margin: 20px;
+  margin: 30px;
 }
 
 h2,
 h3 {
   color: lightblue;
+  margin-bottom: 0;
+  font-size: 25px;
+  padding: 5px;
 }
 
 h4,
 h5 {
   color: lightblue;
+  font-weight: bold;
 }
 
 form {
@@ -28,29 +42,64 @@ form {
 
 ul {
   color: lightblue;
-  display: inline;
+  display: inline-block;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-transform: capitalize;
+  list-style: none;
+}
+p {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 80%;
-  margin: auto;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  min-width: 525px;
 }
 
 .topbox {
+  max-width: 900px;
   border: solid;
   padding: 10px;
   margin: 10px;
+  background: #ffffff;
 }
 
+.col {
+  max-width: 150px;
+  padding: 0 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.current-weather {
+  padding: 10px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.temperature {
+  font-size: 60px;
+  display: inline-block;
+}
 .units {
+  display: inline-block;
   margin: top;
-  font-size: small;
+  font-size: x-small;
+  padding: 0px;
 }
 
 .status {
   display: block;
-  padding: 10px;
+  padding: 20px;
   margin-left: 20px;
   font-size: 20px;
 }
@@ -59,4 +108,13 @@ ul {
   border: solid;
   margin: 0 auto;
   padding: 20px;
+  background: #ffffff;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
