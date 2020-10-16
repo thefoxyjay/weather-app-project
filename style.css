@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+}
+
+h2,
+h3 {
+  color: lightblue;
+}
+
+h4,
+h5 {
+  color: lightblue;
+}
+
+form {
+  text-align: center;
+  padding: 25px auto;
+  margin: 20px;
+}
+
+ul {
+  color: lightblue;
+  display: inline;
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.topbox {
+  border: solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+.units {
+  margin: top;
+  font-size: small;
+}
+
+.status {
+  display: block;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.fiveday {
+  display: block;
+  border: solid;
+  margin: 0 auto;
+  padding: 20px;
+}
