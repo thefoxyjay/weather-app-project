@@ -33,16 +33,21 @@
       <div class="topbox">
         <div class="row">
           <div class="col-6">
-            <h2>
-              <ul>
+            
+              <h2>
+                <ul class="current-weather">
                 <li id="city"></li>
                 <li id="current-time"></li>
-                <span class="temperature" id="temperature"><li></a></span>
-                  <span class="units">
-                    <a href="#" id="celsius-link">°C</a> | 
-                    <a href="#" id="fahrenheit-link">°F</a></span></li></ul>
-              </ul>
-            </h2>
+                <li>
+                  <span class="temperature" id="temperature"></span>
+                  <span class="float-right" id="units">
+                    <a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </li>
+                </ul>
+              </h2>
+            
           </div>
           <div class="col-6">
             <ul class="status">
@@ -50,12 +55,13 @@
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> km/h</li>
               <li id="description"></li>
+              <li><img src="" alt="clear"></li>
             </ul>
           </h3>
             </div>
           </div>
         </div>
-      </div>
+      
       <div class="row">
         <div class="fiveday">
           <div class="col">
@@ -69,7 +75,9 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div>    
+      <p>open-sourced code by <a href="https://github.com/thefoxyjay/weather-app-project.git">Jordan Tarquino</a></p>
+
     </div>
     <script src="src/script.js"></script>
   </body>
