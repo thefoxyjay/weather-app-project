@@ -110,3 +110,11 @@ p {
   padding: 20px;
   background: #ffffff;
 }
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
