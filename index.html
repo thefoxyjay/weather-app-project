@@ -22,13 +22,18 @@
       <h1>How's the Weather?</h1>
       <form class="search-form" 
       id="search-form">
-        <input 
+        <div class="col"><input 
         type="search" 
-        placeholder="Search Your City" 
+        placeholder="Type a City" 
         autofocus="on"
         autocapitalize="on"
         autocomplete="off"
-        id="city-input" />
+        id="city-input"
+        class="form-control" />
+        </div>
+        <div class="col">
+        <input type="submit" value="Search" class="btn btn-primary" />
+        </div>
       </form>
       <div class="topbox">
         <div class="row">
